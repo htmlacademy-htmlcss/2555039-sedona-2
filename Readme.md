@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Карла Абдраева](https://up.htmlacademy.ru/htmlcss-individual/2/user/2555039).
-* Наставник: `Неизвестно`.
+* Наставник: `https://htmlacademy.ru/profile/ankhena`.
 
 ---
 
