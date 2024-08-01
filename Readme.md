@@ -2,6 +2,7 @@
 
 * Студент: [Карла Абдраева](https://up.htmlacademy.ru/htmlcss-individual/2/user/2555039).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Сайт: [Мой проект Седона](https://karlaabdraeva.github.io/2555039-sedona-2/).
 
 ---
 
