@@ -171,13 +171,13 @@ li:nth-child(2n).section-item {
   text-transform: uppercase;
   color: #FFFFFF;
   background: #82B3D3;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
 }
 
 .email-input {
   font-family: inherit;
   background: #F2F2F2;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .subscribe-title {
@@ -297,11 +297,11 @@ background: #3F5E72;
 }
 
 .price-from {
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .price-to {
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
 }
 
 .button-apply {
