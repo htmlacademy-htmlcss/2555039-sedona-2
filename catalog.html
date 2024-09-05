@@ -6,41 +6,42 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header class="page-header" data-test="header">
+  <div class="page-container">
+    <header class="page-header" data-test="header">
     <a class="logo" href="index.html">
       <img class="logo-image" src="images/logo/logo-header.svg" width="140" height="70" alt="логотип сайта Седона">
     </a>
-    <nav class="navigation">
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">О Седоне</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
-        </li>
-      </ul>
-      <ul class="navigation-user">
-        <li class="navigation-user-item">
-          <a class="navigation-user-link navigation-user-link-search" href="#">
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+           <a class="navigation-link" href="index.html">Главная</a>
+         </li>
+          <li class="navigation-item">
+           <a class="navigation-link" href="#">О Седоне</a>
+         </li>
+          <li class="navigation-item">
+           <a class="navigation-link navigation-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
+          </li>
+       </ul>
+       <ul class="navigation-user">
+         <li class="navigation-user-item">
+           <a class="navigation-user-link navigation-user-link-search" href="#">
             <span class="visually-hidden">Поиск</span>
-          </a>
-        </li>
-        <li class="navigation-user-item">
-          <a class="navigation-user-link" href="#">
+            </a>
+          </li>
+         <li class="navigation-user-item">
+            <a class="navigation-user-link" href="#">
             <span class="visually-hidden">Количество отелей в избранном</span>
             <span class="likes-number">12</span>
-          </a>
-        </li>
-        <li class="navigation-user-item">
-          <a class="button search-button" href="#">Хочу сюда</a>
-        </li>
-      </ul>
-    </nav>
+           </a>
+          </li>
+          <li class="navigation-user-item">
+            <a class="button search-button" href="#">Хочу сюда</a>
+          </li>
+        </ul>
+      </nav>
   </header>
-  <main class="main-inner" data-test="main">
+  <main class="main main-inner" data-test="main">
     <div class="filter" data-test="filter">
     <header class="inner-header">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -122,12 +123,14 @@
       </form>
     </section>
     <section class="catalog" data-test="catalog">
+      <div class="catalog-wrapper">
       <h2 class="catalog-title">Найдено гостиниц: 38</h2>
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешевые</option>
         <option value="expensive">Сначала дорогие</option>
         <option value="popular">Cначала популярные</option>
       </select>
+      </div>
       <div class="catalog-format">
         <a class="button button-active" href="#">
           <span class="visually-hidden">Показать список отелей в виде карточек</span>
@@ -218,7 +221,7 @@
         </li>
       </ul>
     </section>
-    <section class="subscribe-inner" data-test="subscribe">
+    <section class="subscribe subscribe-inner" data-test="subscribe">
       <h2 class="subscribe-inner-title">Подпишитесь на рассылку</h2>
       <p class="subscribe-inner-description">Только полезная информация и никакого спама, <br>честное бойскаутское!</br></p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -229,38 +232,41 @@
     </section>
   </main>
   <footer class="page-footer" data-test="footer">
-    <section class="footer-social">
-      <h2 class="visually-hidden">Соцсети</h2>
-      <ul class="social-list">
-        <li class="social-item">
-          <a class="button" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">Инстаграм</span>
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="button" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-      </ul>
+    <div class="footer-container">
+    <section class="socials">
+      <h2 class=" visually-hidden">Соцсети</h2>
+    <ul class="social-list">
+      <li class="social-item">
+        <a class="button" href="#">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="button" href="#">
+          <span class="visually-hidden">Инстаграм</span>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="button" href="#">
+          <span class="visually-hidden">Телеграм</span>
+        </a>
+      </li>
+    </ul>
     </section>
     <section class="contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <address class="contacts-address">
-        <a class="contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </address>
+    <h2 class="visually-hidden">Контакты</h2>
+    <address class="contacts-address">
+      <a class="contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    </address>
     </section>
-    <section class="footer-logo">
-      <h2 class="visually-hidden">Сделано в HTML academy</h2>
-      <a class="footer-logo-link" href="https://htmlacademy.ru/">
-        <img class="footer-logo-image" src="images/logo/html-academy-inscript.svg" width="115" height="33" alt="Логотип html academy">
-      </a>
+    <section class="logo-academy">
+    <h2 class="visually-hidden">Сделано в HTML academy</h2>
+    <a class="logo-academy-link" href="https://htmlacademy.ru/">
+      <img class="logo-academy-image" src="images/logo/html-academy-inscript.svg" width="115" height="33" alt="Логотип html academy">
+    </a>
     </section>
+    </div>
   </footer>
+  </div>
 </body>
 </html>
