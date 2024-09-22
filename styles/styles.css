@@ -129,7 +129,6 @@ body {
 
 .navigation-user-item{
   list-style-type: none;
-  margin-right: 20x;
 }
 
 .navigation-user-item:not(:last-child):hover {
@@ -740,7 +739,7 @@ li:nth-child(2n+1).services-item {
   cursor: pointer;
 }
 
-.catalog-control:has(.control-input:disabled) {
+.catalog-control:has(.catalog-control-input:disabled) {
   opacity: 30%;
   pointer-events: none;
 }
