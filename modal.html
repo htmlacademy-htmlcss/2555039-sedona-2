@@ -4,45 +4,45 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="../images/decor-small-icons/favicon.png">
   <link rel="icon" type="image/png" href="../images/decor-small-icons/favicon.png">
 </head>
 <body>
   <div class="page-container">
     <header class="page-header" data-test="header">
-        <a class="logo" href="index.html" aria-current="page">
-          <img class="logo-image" src="images/logo/logo-header.svg" width="140" height="70" alt="логотип сайта Седона">
-        </a>
+      <a class="logo" href="index.html" aria-current="page">
+        <img class="logo-image" src="images/logo/logo-header.svg" width="140" height="70" alt="логотип сайта Седона">
+      </a>
     <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="index.html" aria-current="page">Главная</a>
-          </li>
-          <li class="navigation-item">
-           <a class="navigation-link" href="#">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-           <a class="navigation-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation-user">
-          <li class="navigation-user-item">
-            <a class="navigation-user-link search-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="navigation-user-link favourites-link" href="#">
-              <span class="visually-hidden">Количество отелей в избранном</span>
-              <span class="favourites-number">12</span>
-            </a>
-          </li>
-          <li class="navigation-user-item">
-            <a class="button button-text" href="catalog.html">Хочу сюда</a>
-          </li>
-       </ul>
-       </nav>
-   </header>
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-current" href="index.html" aria-current="page">Главная</a>
+        </li>
+        <li class="navigation-item">
+         <a class="navigation-link" href="#">О Седоне</a>
+        </li>
+        <li class="navigation-item">
+         <a class="navigation-link" href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="navigation-user">
+        <li class="navigation-user-item">
+          <a class="navigation-user-link search-link" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="navigation-user-item">
+          <a class="navigation-user-link favourites-link" href="#">
+            <span class="visually-hidden">Количество отелей в избранном</span>
+            <span class="favourites-number">12</span>
+          </a>
+        </li>
+        <li class="navigation-user-item">
+          <a class="button button-text" href="catalog.html">Хочу сюда</a>
+        </li>
+     </ul>
+     </nav>
+ </header>
    <main class="main" data-test="main">
     <section class="welcome" data-test="hero">
       <h1 class="visually-hidden">Сайт по выбору отелей в Седоне</h1>
@@ -50,7 +50,7 @@
         lang="en">
     </section>
     <section class="advantages" data-test="advantages">
-      <h2 class="advantages-lead">Седона — небольшой городок в Аризоне, <br>заслуживающий большего!</h2>
+      <h2 class="advantages-lead">Седона - небольшой городок в Аризоне, <br>заслуживающий большего!</h2>
       <p class="advantages-lead-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       <ul class="advantages-list">
         <li class="advantages-item-dark">
@@ -87,7 +87,7 @@
       <ul class="services-list">
         <li class="services-item">
           <h3 class="services-item-title services-housing">Жильё</h3>
-          <p class="services-item-description">Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино!</p>
+          <p class="services-item-description">Рекомендуем пожить <br>в настоящем мотеле, всё как в кино!</p>
         </li>
         <li class="services-item">
           <h3 class="services-item-title services-food">Еда</h3>
@@ -149,13 +149,10 @@
       </div>
     </footer>
   </div>
-  <div class="modal-container modal-container-close">
+  <div class="modal-container">
     <div class="modal modal-auth">
       <section class="modal-content" data-test="modal">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
         <form class="modal-form" action="https://echo.htmlacademy.ru" method="get">
           <div class="form-group form-group-fill">
             <label class="modal-form-label" for="arrival-date">Дата Заезда:</label>
@@ -168,20 +165,20 @@
             <p class="caution">На эти даты есть свободные номера. Пока есть.</p>
           </div>
           <div class="form-group">
-            <label class="modal-form-label" for="quantity-adults">Взрослые:</label>
-            <div class="quantity-container">
+            <label class="modal-form-label" for="adults">Взрослые:</label>
+            <div class="quantity-container input-adults-container">
               <button class="quantity-button quantity-button-less" type="button">
                 <span class="visually-hidden">Меньше</span>
               </button>
-              <input class="quantity-input" type="number" id="quantity-adults" name="quantity-adults" value="2" placeholder="2">
+              <input class="quantity-input" type="number" id="adults" name="adults" value="2" placeholder="2">
               <button class="quantity-button quantity-button-more" type="button">
                 <span class="visually-hidden">Больше</span>
               </button>
             </div>
           </div>
           <div class="form-group">
-            <div class="group-children">
-              <label class="modal-form-label label-children" for="quantity-children">&nbsp;Дети:</label>
+            <div class="group-kids">
+              <label class="form-label label-kids" for="kids">&nbsp;Дети:</label>
               <span class="tooltip">
                 <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
                 <span class="visually-hidden">Дополнительная информция</span>
@@ -189,11 +186,11 @@
                 <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
               </span>
             </div>
-            <div class="quantity-container">
+            <div class="quantity-container input-kids-container">
               <button class="quantity-button quantity-button-less" type="button">
                 <span class="visually-hidden">Меньше</span>
               </button>
-              <input class="quantity-input" type="number" id="quantity-children" name="quantity-children" value="2" placeholder="2">
+              <input class="quantity-input" type="number" id="kids" name="kids" value="2" placeholder="2">
               <button class="quantity-button quantity-button-more" type="button">
                 <span class="visually-hidden">Больше</span>
               </button>
@@ -202,7 +199,10 @@
           <button class="button-modal primary-button" type="submit">Найти</button>
         </form>
       </section>
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </div>
   </div>
-</body>
-</html>
+  </body>
+  </html>
