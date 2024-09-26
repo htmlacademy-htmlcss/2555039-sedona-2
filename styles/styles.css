@@ -1846,7 +1846,7 @@ input[type='number'] {
 }
 
 .tooltip-toggle:hover + .tooltip-text,
-.tooltip-tooltip:focus + .tooltip-text {
+.tooltip-toggle:focus + .tooltip-text {
   display: block;
 }
 
